@@ -131,3 +131,34 @@ function handleWindowTap(element) {
   topBar.style.zIndex = biggestIndex + 1
   deselectIcon(selectedIcon)
 }
+
+//Code for paint app
+const board = document.getElementById("board");
+const context = board.getContext("2d")
+
+let isDrawing = false;
+
+const colorPicker = document.getElementById("color-picker")
+const brushSize = document.getElementById("brush-size")
+const clear = document.getElementById("clear")
+const fill = document.getElementById("fill")
+
+board.addEventListener("mousedown", () => {isDrawing = true})
+board.addEventListener("mouseup", () => {
+  isDrawing = false;
+  context.beginPath();
+})
+board.addEventListener("mousemove", draw);
+
+function draw(e) {
+  if (!isDrawing) return;
+  
+  context.lineWidth = brushSize.value;
+  context.lineCap = "round";
+  context.strokeStyle = colorPicker.value;
+
+  context.lineTo(e.offsetX, e.offsetY);
+  context.stroke();
+  context.beginPath();
+  context.moveTo(e.offsetX, e.offsetY);
+}
