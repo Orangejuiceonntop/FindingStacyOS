@@ -148,11 +148,12 @@ board.addEventListener("mouseup", () => {
   isDrawing = false;
   context.beginPath();
 })
+board.addEventListener("mouseout", () => {isDrawing = false})
 board.addEventListener("mousemove", draw);
 
 function draw(e) {
   if (!isDrawing) return;
-  
+
   context.lineWidth = brushSize.value;
   context.lineCap = "round";
   context.strokeStyle = colorPicker.value;
