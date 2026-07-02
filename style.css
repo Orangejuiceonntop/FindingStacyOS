@@ -46,3 +46,9 @@ body {
   cursor: crosshair;
   margin-top: 10px;
 }
+
+.calc {
+  background: gray;
+  padding: 20px;
+  border-radius: 10px;
+}

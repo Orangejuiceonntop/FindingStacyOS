@@ -57,7 +57,7 @@
       </div>
     </div>
 
-    <div id="calc" class="window" style="width: 30%; height: 70%; display: none">
+    <div id="calc" class="window" style="width: 30%; height: 70%; display: show">
       <div id="calcheader" class="windowheader">
         <p class="closebutton" style="cursor: pointer" id="calcclose"></p>
         <p> 
@@ -65,7 +65,20 @@
         </p>
         <p> </p>
       </div>
-      <div style="background-color:#ffffff; width: 100%;">
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <div class="calc">
+          <form>
+            <div>
+              <input type="text" name="display">
+            </div>
+            <div>
+              <input type="button" value="AC">
+              <input type="button" value="DE">
+              <input type="button" value=".">
+              <input type="button" value="/">
+            </div>
+          </form>
+        </div>
       </div>
     </div>
 
