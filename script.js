@@ -152,6 +152,7 @@ board.addEventListener("mouseout", () => {isDrawing = false})
 board.addEventListener("mousemove", draw);
 
 clear.addEventListener("click", clearCanvas);
+fill.addEventListener("click", fillCanvas)
 
 function draw(e) {
   if (!isDrawing) return;
@@ -168,4 +169,9 @@ function draw(e) {
 
 function clearCanvas() {
   context.clearRect(0, 0, board.width, board.height);
+}
+
+function fillCanvas() {
+  context.fillStyle = colorPicker.value;
+  context.fillRect(0, 0, board.width, board.height);
 }
