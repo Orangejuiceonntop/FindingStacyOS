@@ -151,6 +151,8 @@ board.addEventListener("mouseup", () => {
 board.addEventListener("mouseout", () => {isDrawing = false})
 board.addEventListener("mousemove", draw);
 
+clear.addEventListener("click", clearCanvas);
+
 function draw(e) {
   if (!isDrawing) return;
 
@@ -162,4 +164,8 @@ function draw(e) {
   context.stroke();
   context.beginPath();
   context.moveTo(e.offsetX, e.offsetY);
+}
+
+function clearCanvas() {
+  context.clearRect(0, 0, board.width, board.height);
 }
