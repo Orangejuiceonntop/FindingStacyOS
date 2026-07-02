@@ -39,3 +39,9 @@ body {
 .selected {
   border-radius: 20px
 }
+
+#board{
+  border: 1px solid #c4acac;
+  background: white;
+  cursor: crosshair;
+}
