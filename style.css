@@ -111,3 +111,8 @@ form input.equal {
   height: 60px;
   border-bottom: solid #000000 1px;
 }
+
+.sidebar .entry:hover {
+  color: #ffffff;
+
+}
