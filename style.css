@@ -48,7 +48,7 @@ body {
 }
 
 .calc {
-  background: gray;
+  background: #ffc2d1;
   padding: 20px;
   border-radius: 10px;
   margin-top: 10px
@@ -63,6 +63,7 @@ body {
   font-size: 20px;
   cursor: pointer;
   margin: 10px;
+  background: #ffe5ec
 }
 
 form .display {
@@ -74,6 +75,7 @@ form .display input {
   text-align: right;
   flex: 1;
   font-size: 35px;
+  background: #ffffff
 }
 
 form input.equal {
