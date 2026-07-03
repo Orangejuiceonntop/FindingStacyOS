@@ -17,6 +17,7 @@ body {
 
 .window {
   border: solid;
+  border-color: #c4acac;
   border-width: 2px;
   border-radius: 8px;
   display: block;
@@ -89,4 +90,24 @@ form .display input {
 
 form input.equal {
   width: 125px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  width: 150px;
+  height: 437px;
+  max-height: 437px;
+  overflow-y: scroll;
+  background: #ffe5ec;
+}
+
+.sidebar .entry {
+  cursor: pointer;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 125px;
+  height: 60px;
+  border-bottom: solid #000000 1px;
 }
