@@ -140,4 +140,5 @@ form input.equal {
 .content p {
   margin-top: 22px;
   margin-left: 5px;
+  outline: none;
 }
