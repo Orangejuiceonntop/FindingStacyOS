@@ -4,6 +4,7 @@
 
 A detective game where you have to search through Stacy's laptop to uncover the reason behind her disappearance.
 
+https://orangejuiceonntop.github.io/FindingHerOS/
 
 This version does not have any mystery elements yet, but feel free to try out the existing apps for now!
 
