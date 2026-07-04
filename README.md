@@ -23,7 +23,8 @@ This version does not have any mystery elements yet, but feel free to try out th
 
 ## Credits
 
-Background image was created by me
+- Background image was created by me
 
-Diary app icon - Icons-Icons
-Paint + calculator app icon - Flaticon
+- Diary app icon - Icons-Icons
+
+- Paint + calculator app icon - Flaticon
