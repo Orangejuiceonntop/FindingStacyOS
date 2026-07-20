@@ -10,6 +10,7 @@ dragElement(document.getElementById("welcome"));
 dragElement(document.querySelector('#notes'));
 dragElement(document.querySelector('#calc'));
 dragElement(document.querySelector('#paint'));
+dragElement(document.querySelector('#gallery'));
 
 function dragElement(element) {
   var initialX = 0;
@@ -99,6 +100,12 @@ var paintScreenClose = document.querySelector('#paintclose')
 paintScreenClose.addEventListener("click", () => closeWindow(paintScreen));
 var paintScreenOpen = document.querySelector('#paintopen')
 paintScreenOpen.addEventListener("click", () => openWindow(paintScreen))
+
+var galleryScreen = document.querySelector('#gallery')
+var galleryScreenClose = document.querySelector('#galleryclose')
+galleryScreenClose.addEventListener("click", () => closeWindow(galleryScreen));
+var galleryScreenOpen = document.querySelector('#galleryopen')
+galleryScreenOpen.addEventListener("click", () => openWindow(galleryScreen))
 
 var biggestIndex = 1;
 function openWindow(element) {
